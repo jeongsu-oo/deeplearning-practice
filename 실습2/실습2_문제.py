@@ -164,8 +164,9 @@ w, b = 학습(X_train_z, y_train)
 train_pred = 예측(X_train_z, w, b)
 test_pred = 예측(X_test_z, w, b)
 print(R2(y_train, train_pred).round(4), MSE(y_train, train_pred).round(4))
-print(R2(y_test, test_pred).round(4), MSE(y_train, train_pred).round(4))
+print(R2(y_test, test_pred).round(4), MSE(y_test, test_pred).round(4))
 "과적합 - 설명력이 월등히 높아서"
+"랜덤하게 학습데이터가 설정이 돼서"
 
 
 # =====================================================================
