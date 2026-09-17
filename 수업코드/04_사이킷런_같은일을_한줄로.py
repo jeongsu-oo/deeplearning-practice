@@ -315,7 +315,7 @@ os.remove("고장분류기.joblib")  # 수업 폴더를 깨끗하게 (실제론 
 # =====================================================================
 print("""
 [9] 손으로 한 것 ↔ 사이킷런
-    01 표준화 (x−평균)/표준편차     ↔  StandardScaler().fit(train) / .transform()
+    01 표준화 (x-평균)/표준편차     ↔  StandardScaler().fit(train) / .transform()
     02 섞어서 70:30 자르기          ↔  train_test_split(X, y, test_size=0.3, random_state=…, stratify=y)
     01·02 경사하강 300·500걸음      ↔  LinearRegression().fit(X, y)   (공식으로 단번에)
     03 sigmoid + 로그손실 + 경사하강 ↔  LogisticRegression().fit(X, y)  (속으로 걸음, max_iter)
