@@ -160,6 +160,7 @@ print(*학습(X_train_z, y_train))
 #        ai4i 데이터(02)에서는 차이가 0.03 이었습니다. 왜 여기선 다를까요?
 #      내 답:
 # TODO
+print("===================")
 w, b = 학습(X_train_z, y_train)
 train_pred = 예측(X_train_z, w, b)
 test_pred = 예측(X_test_z, w, b)
